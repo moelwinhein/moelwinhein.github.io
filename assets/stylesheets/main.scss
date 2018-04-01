@@ -1,0 +1,76 @@
+---
+---
+
+@import "404";
+
+html {
+  font: 16px/1.5 "Open Sans", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #7FDBFF;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.inner-container {
+  margin-bottom: 40px;
+}
+
+.front-icon,
+.back-icon {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about {
+  text-align: center;
+}
+
+.front {
+  text-align: center;
+}
+
+.back {
+  text-align: center;
+}
+
+img.round {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.links {
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 125%;
+  }
+}
