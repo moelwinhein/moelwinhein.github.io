@@ -9,17 +9,17 @@ export default function ProfileDetail() {
       <p className="max-w-screen-lg text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
         {my.about}
       </p>
-      <div className="gap-x-2 font-mono text-sm text-foreground/80 flex items-center print:text-[12px]">
+      <div className="gap-x-2 font-mono text-sm text-foreground/80 flex max-sm:flex-col max-sm:gap-y-2 print:gap-y-0 print:flex-row items-center print:text-[12px]">
         <a className="inline-flex gap-x-1.5 align-baseline leading-none underline hover:text-foreground/70" href={`mailto:${my.contact.email}`}>
           <MailIcon className="size-4" aria-hidden="true"/>
           {my.contact.email}
         </a>
-        <DotIcon className="size-6" aria-hidden="true"/>
+        <DotIcon className="size-6 max-sm:hidden" aria-hidden="true"/>
         <a className="inline-flex gap-x-1.5 align-baseline leading-none underline hover:text-foreground/70" href={`tel:${my.contact.tel}`}>
           <PhoneIcon className="size-4" aria-hidden="true"/>
           {my.contact.tel}
         </a>
-        <DotIcon className="size-6" aria-hidden="true"/>
+        <DotIcon className="size-6 max-sm:hidden" aria-hidden="true"/>
         <a className="inline-flex gap-x-1.5 align-baseline leading-none underline hover:text-foreground/70" href={`${my.contact.social.linkedin.url}`}>
           <LinkedInIcon className="size-4" aria-hidden="true"/>
           {my.contact.social.linkedin.name}
